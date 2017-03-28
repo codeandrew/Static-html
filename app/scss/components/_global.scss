@@ -1,0 +1,19 @@
+.center {
+  float : none;
+  margin : 0 auto;
+  text-align : center;
+}
+
+.none {
+  visibility : hidden;
+ }
+
+.screen-xs-center {
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin: 0 auto;
+    text-align : center ;
+    float: none !important;
+  }
+}
+
