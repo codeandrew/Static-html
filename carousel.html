@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Carousel Web site</title>
+
+	<link rel="stylesheet" type="text/css" href="app/css/styles.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+	img {
+		width : 100%;
+		height : auto;
+		margin : 0 ;
+	}
+	html, body {
+		margin : 0;
+
+	}
+
+	p {
+		color : #777;
+	}
+
+	.dark-content {
+		background-color : #22313f;
+		color : #fff;
+	}
+	.carousel {
+		min-height: 400px;
+	}
+	.slide-1 {
+		background-image: url("app/images/img-5.jpg");
+		background-position: center center ;
+		background-repeat: no-repeat;
+		background-size: cover ;
+		min-height: 400px;
+	}
+	.slide-2 {
+		background-image: url('app/images/img-1.jpg');
+		background-position: center center ;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 400px;
+	}
+	.slide-3 {
+		background-image: url('app/images/img-4.jpg');
+		background-position: center center ;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 400px;
+	}	
+
+</style>
+<body>
+	
+	
+  <section>
+  	<img class="slides" src="app/images/img-1.jpg"></img>
+  	<img class="slides" src="app/images/img-2.jpg"></img>
+  	<img class="slides" src="app/images/img-5.jpg"></img>
+  </section>	
+
+
+  <section class="section-pad-md">
+	<div class="container center">
+		<h1> Some Heading </h1>
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>  	
+  </section>
+  <section class="dark-content section-pad-md">
+  	 <div class="container center">
+  	 	<div class="row">
+  	 		<div class="col-sm-4">
+  	 			<h2>Something </h2>
+  	 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  	 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  	 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+  	 		</div>
+  	 		<div class="col-sm-4">
+  	 			<h2> Some thing </h2>
+  	 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  	 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  	 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+  	 		</div>
+  	 		<div class="col-sm-4">
+  	 			<h2> subheading </h2>
+  	 			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  	 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  	 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  	 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </section>
+
+  <section class="carousel">
+  	<div class="slider slide-1">
+		<div class="caption">
+			<span class="border">
+				Some Description-1
+			</span> 
+		</div>
+  	</div>
+  	<div class="slider slide-2">
+  		<div class="caption">
+  			<span class="border">
+  				Some Description-2
+  			</span>
+  		</div>
+  	</div>
+  	<div class="slider slide-3">
+  		<div class="caption">
+  			<span class="border">
+  				Some Description-3
+  			</span>
+  		</div>
+  	</div>
+
+  </section>
+
+
+	<script type="text/javascript">
+		//Automatic SlideShow - changes every 3 second
+
+		var index = 0;
+		carousel();
+		function carousel(){
+			var x = document.getElementsByClassName('slides');
+			for (var i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+			index++;
+			if (index > x.length){index = 1}
+				x[index-1].style.display = "block";
+			setTimeout(carousel, 3000);
+		}
+
+		var foo = 0;
+		slide();
+		function slide(){
+			var x = document.getElementsByClassName('slider');
+			for (var i = 0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+			foo++;
+			if (foo > x.length){foo = 1}
+				x[foo-1].style.display = "block";
+			setTimeout(slide, 3000);
+		}
+
+	</script>
+</body> 
+</html>
