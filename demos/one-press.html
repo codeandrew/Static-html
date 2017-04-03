@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Demo Website</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="../app/css/styles.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style media="screen">
+
+
+  .slide-1 {
+    background-image: url("../app/images/img-5.jpg");
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    min-height: 100%;
+  }
+  .slide-2 {
+    background-image: url('../app/images/img-1.jpg');
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+  }
+  .slide-3 {
+    background-image: url('../app/images/img-4.jpg');
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+  }
+
+</style>
+</head>
+<body id="one-press">
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header one-press-nav">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand one-press-nav" href="#">ONEPRESS</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right one-press-nav">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Showreel</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner">
+
+    <section class="carousel">
+    	<div class="slides slide-1"></div>
+    	<div class="slides slide-2"></div>
+    	<div class="slides slide-3"></div>
+    </section>
+
+
+    <div class="hero">
+      <h2 class="large-text">We are Responsive</h2>
+      <p class="small-text">
+        Morbi tempus porta nunc pharetra quisque <strong>ligula imperdiet posuere</strong>
+        <br> vitae felis proin sagittis leo ac tellus blandit sollicitudin quisque vitae placerat
+      </p>
+    </div>
+
+  </section>
+
+
+  	<script type="text/javascript">
+  		//Automatic SlideShow - changes every 3 second
+
+  		var index = 0;
+  		carousel();
+  		function carousel(){
+  			var x = document.getElementsByClassName('slides');
+  			for (var i = 0; i < x.length; i++){
+  				x[i].style.display = "none";
+  			}
+  			index++;
+  			if (index > x.length){index = 1}
+  				x[index-1].style.display = "block";
+  			setTimeout(carousel, 3000);
+  		}
+      </script>
+</body>
+</html>

@@ -1,8 +1,14 @@
+//File System and Folder Structure
 @import 'theme';
+
+//components
 @import 'components/variables';
 @import 'components/global';
 @import 'components/components';
 @import 'components/parallax';
+
+//Demo Websites
+@import 'demo/demo';
 
 .test {
 	width : percentage(5/7);

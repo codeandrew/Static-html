@@ -1,0 +1,99 @@
+#one-press {
+  nav {
+    height :75px;
+    background-color:#fff;
+    margin: 0;
+    position: relative;
+    z-index: 9999;
+    border : none ;
+    @extend .shadow ;
+
+    .one-press-nav {
+      height : 75px;
+      line-height: 75px;
+      padding : 0 15px;
+      color : #393939;
+         li a{
+          height: 75px;
+          line-height: 75px;
+          padding: 0 15px;
+          text-transform: uppercase;
+          color : #393939;
+          font-family : 'Raleway';
+          font-size : 13px;
+          font-weight: bold ;
+
+        }
+    }
+    .navbar-toggle {
+      border : 1px solid #ccc;
+      .icon-bar {
+        background-color: #ccc;
+      }
+    }
+
+    #myNavbar{
+      background-color : #fff;
+    }
+  }//nav element
+
+  section.banner {
+    height:80% ;
+    background-color : #ababab;
+    display: block;
+    position: relative;
+    font-family: 'Lato-light';
+    transition: .7s;
+      @media screen and (max-width: 940px){
+        height: 60%;
+      }
+
+
+    .carousel {
+      height: 100%;
+      z-index: 0;
+      position: relative;
+    }
+    .hero {
+      @extend .center;
+      position: absolute;
+      top : 0;
+      display: block;
+      color : #FFF;
+      padding : 10% 0;
+      width: 100%;
+    }
+
+    .large-text {
+      font-size: 35px;
+      letter-spacing: 2px;
+      line-height: 1.3;
+      font-weight: 800;
+      text-transform: uppercase;
+      font-family: 'Raleway-Bold';
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      transition: 1s;
+      @media screen and (min-width: 940px){
+        font-size: 75px;
+        letter-spacing: 4px;
+      }
+    }
+    .small-text {
+      font-size : 14px;
+      transition : 1s;
+      transition-delay: .4s;
+        @media screen and (min-width : 940px){
+          font-size: 18px;
+        }
+        @media screen and (min-width:1140px ){
+          font-size: 22px;
+        }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}//#onepress
