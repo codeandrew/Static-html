@@ -13,4 +13,10 @@ Package Json Dependencies <br>
 
 Fonts Included 
 - Lato 
+- Raleway
+- Gotham
+<br>
 
+Demo Pages
+- Carousel Page
+- Parallax Page
