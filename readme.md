@@ -15,7 +15,12 @@ Fonts Included
 - Lato 
 - Raleway
 - Gotham
+- Roboto
 <br>
+
+CDN Included 
+- Bootstrap
+- Jquery
 
 Demo Pages
 - Carousel Page
