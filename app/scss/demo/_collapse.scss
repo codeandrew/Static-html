@@ -1,0 +1,55 @@
+div {transition : 1s ;}
+.collapse-nav{
+	height : 75px; 
+	background-color:  #333;
+	.nav-head {
+		float : left ;
+		@media screen and (max-width: 900px){
+			float : none;
+		}
+	}
+	.brand {
+		color : white;
+		font-size : 40px;
+	 }
+
+	 .collapse-btn {
+	 	height: 50px;
+	 	width: 50px;
+	 	border : 2px solid white;
+	 	float : right ;
+
+	 	@media screen and (min-width: 900px){
+	 		display : none ;
+	 	}
+
+	 }
+	
+	.coll {
+		background-color: #333;
+		float: right;
+		display: block;
+			@media screen and (max-width: 900px){
+					width: 100%;
+
+				}
+		ul {
+			@media screen and (max-width: 900px){
+				display: none;
+			}
+			li {
+				@media screen and (max-width: 900px){
+					display: block;
+
+				}
+				a {
+					padding: 10px;
+					font-size: 20px;
+					color: white;
+					background-color: #333;
+				}
+			}
+		}
+	}
+
+}

@@ -167,6 +167,12 @@
   font-weight: normal;
   font-style: normal; }
 
+ul li {
+  list-style-type: none;
+  display: inline-block; }
+  ul li a {
+    text-decoration: none; }
+
 html, body {
   height: 100%;
   margin: 0; }
@@ -329,6 +335,47 @@ html, body {
 #one-press img {
   width: 100%;
   height: auto; }
+
+div {
+  transition: 1s; }
+
+.collapse-nav {
+  height: 75px;
+  background-color: #333; }
+  .collapse-nav .nav-head {
+    float: left; }
+    @media screen and (max-width: 900px) {
+      .collapse-nav .nav-head {
+        float: none; } }
+  .collapse-nav .brand {
+    color: white;
+    font-size: 40px; }
+  .collapse-nav .collapse-btn {
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    float: right; }
+    @media screen and (min-width: 900px) {
+      .collapse-nav .collapse-btn {
+        display: none; } }
+  .collapse-nav .coll {
+    background-color: #333;
+    float: right;
+    display: block; }
+    @media screen and (max-width: 900px) {
+      .collapse-nav .coll {
+        width: 100%; } }
+    @media screen and (max-width: 900px) {
+      .collapse-nav .coll ul {
+        display: none; } }
+    @media screen and (max-width: 900px) {
+      .collapse-nav .coll ul li {
+        display: block; } }
+    .collapse-nav .coll ul li a {
+      padding: 10px;
+      font-size: 20px;
+      color: white;
+      background-color: #333; }
 
 .test {
   width: 71.42857%; }

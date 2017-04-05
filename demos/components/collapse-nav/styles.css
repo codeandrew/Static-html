@@ -1,0 +1,15 @@
+nav {
+	background-color : #333;
+	color : white;
+	height : 75px;
+}
+
+.brand {
+	font-size : 40px;
+}
+button {
+	float: right ;
+	@media screen and ( min-width: 900px){
+		display : none ;
+	}
+}
